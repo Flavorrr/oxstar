@@ -1,9 +1,9 @@
 name: 🚀 Deploy Website to Truehost
 
 on:
+  workflow_dispatch:      
   push:
-    branches:
-      - main
+    branches: [ master ]
 
 jobs:
   web-deploy:
