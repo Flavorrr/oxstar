@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - Oxstar Consultancy Limited</title>
+    <!-- Default SEO – will be overwritten by JS if service param exists -->
+    <title>Our Projects – Oxstar Consultancy</title>
+    <meta name="description" content="Explore detailed case studies and project examples from Oxstar Consultancy across research, training, disaster risk management, and policy.">
+    <!-- Google Fonts + Font Awesome + CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <style>
@@ -342,7 +346,7 @@
         </div>
     </header>
 
-    <!-- Service Hero Section -->
+    <!-- Service Hero Section 
     <section class="service-hero" id="service-hero">
         <div class="container">
             <h1 id="service-title">Our Service Projects</h1>
@@ -350,25 +354,51 @@
         </div>
     </section>
 
-    <!-- Service Content -->
+    <!-- Service Content 
     <section class="service-content">
         <div class="container">
             <div class="service-description">
                 <p id="service-description">Select a service from the home page to view specific projects.</p>
             </div>
             
-            <!-- Service Navigation -->
+            <!-- Service Navigation 
             <div class="service-navigation" id="service-navigation"></div>
             
-            <!-- Search Input -->
+            <!-- Search Input 
             <input type="text" id="project-search" class="project-search" placeholder="Search projects..." style="display: none;">
             
             <div id="projects-container" class="projects-grid">
-                <!-- Projects will be dynamically loaded here based on the service -->
+                <!-- Projects will be dynamically loaded here based on the service 
             </div>
             
             <div class="back-to-services">
                 <a href="index.html#services" class="btn">Back to All Services</a>
+            </div>
+        </div>
+    </section> -->
+    <!-- Service Hero -->
+    <section class="service-hero" id="service-hero">
+        <div class="container">
+            <h1 id="service-title">Our Service Projects</h1>
+            <p id="service-subtitle">Detailed view of our work and achievements</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="service-content">
+        <div class="container">
+            <div class="service-description">
+                <p id="service-description">Select a service from the home page to view specific projects.</p>
+            </div>
+            <!-- Service Navigation -->
+            <div class="service-navigation" id="service-navigation"></div>
+            <!-- Search Input -->
+            <input type="text" id="project-search" class="project-search" placeholder="Search projects..." style="display: none;">
+            <!-- Projects Grid -->
+            <div id="projects-container" class="projects-grid"></div>
+            <!-- Back Link -->
+            <div class="back-to-services">
+                <a href="index.html#services" class="btn">← Back to All Services</a>
             </div>
         </div>
     </section>
@@ -406,6 +436,11 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
         // Get service type from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
@@ -427,7 +462,7 @@
                     },
                     { 
                         title: "Field Supervision", 
-                        description: "AYNRAD program conducting field supervision.",
+                        description: "Oxstar program team conducting field supervision.",
                         image: "./Oxstar_Project_Images/AYNRAD .png",
                         year: "2023",
                         location: "Somaliland"
@@ -452,7 +487,35 @@
                         image: "./Oxstar_Project_Images/Seed Bank Project 2.png",
                         year: "2023",
                         location: "Gabiley, Somaliland"
-                    }
+                    },
+                    {
+                        title: "Food distro Monitoring",
+                        description: "The Oxstar team conducted a rigorous Third-Party Monitoring (TPM) mission in Borama District to verify food distribution initiatives implemented by Welt Hunger Hilfe (WHH). Funded by the World Food Program, this oversight activity ensured that the delivery of life-saving resources reached the intended beneficiaries efficiently.",
+                        image: "./Oxstar_Project_Images/WHH.png",
+                        year: "2023",
+                        location: "Boramo District, Somaliland"
+                    },
+                     {
+                        title: "Digital Registration Verification",
+                        description: "The Oxstar team conducted a specialized Third-Party Monitoring mission in Borama District to verify the digital registration of beneficiaries for food distribution initiatives. This process involved a meticulous audit of the biometric and digital databases managed by Welt Hunger Hilfe (WHH) to ensure data integrity and accuracy.",
+                        image: "./Oxstar_Project_Images/WHH 2.png",
+                        year: "2023",
+                        location: "Boramo District, Somaliland"
+                    },
+                     {
+                        title: "Spot-check monitoring and supervision on Mobile Health facilities", 
+                        description: "The Oxstar team conducted a comprehensive spot-check monitoring and supervision mission focused on mobile health facilities throughout the Sool region of Somaliland. These critical assessments were designed to evaluate the operational efficiency and service delivery standards of clinics reaching nomadic and remote communities.",
+                        image: "./Oxstar_Project_Images/spot-check.jpg",
+                        year: "2023",
+                        location: "Sool region, Somaliland "
+                     },
+                     {
+                        title: "Field Supervision", 
+                        description: "Oxstar program team conducting field supervision.",
+                        image: "./Oxstar_Project_Images/AYNRAD .png",
+                        year: "2023",
+                        location: "Somaliland"
+                     }
                 ]
             },
             training: {
@@ -507,6 +570,34 @@
                         image: "./Oxstar_Project_Images/Somaliland Government Officials.png",
                         year: "2023",
                         location: "Somaliland"
+                    },
+                    {
+                        title: "Youth Engagement in Democratic Processes",
+                        description: "The Oxstar program team organized an impactful workshop in Hargeisa focused on enhancing youth engagement in democratic processes across Somaliland. During the sessions, facilitators educated young participants on their fundamental civic rights and the various mechanisms for political participation.",
+                        image: "./Oxstar_Project_Images/Youth Democratic Processes.png",
+                        year: "2023",
+                        location: "Hargeisa, Somaliland"
+                    },
+                    {
+                        title: "Youth Peace and Reconciliation Training",
+                        description: "The Oxstar Consultancy team facilitated a dynamic \"Youths for Peace and Reconciliation\" training program in Garowe City to empower young leaders in Puntland. Throughout the sessions, the team provided participants with essential conflict resolution skills and techniques for fostering social cohesion within their communities.",
+                        image: "./Oxstar_Project_Images/Youth Training.jpg",
+                        year: "2023",
+                        location: "Garowe City, Puntland State of Somalia"
+                    },
+                      {
+                        title: "cultural art performance for Peacebuilding",
+                        description: " A message during the culture performance event was centered towards encouraging more dialogue between members of the cultural sectors and representatives of the community in the areas of peace-building and conflict prevention.",
+                        image: "./Oxstar_Project_Images/Culture.png",
+                        year: "2023",
+                        location: "Puntland, Somalia"
+                    },
+                    {
+                        title: "Group Discussions on the Electoral Process in Somaliland",
+                        description: "The participants discussed the political rights granted by the Somaliland Constitution, beginning with the right to vote. They examined how voting is not only a fundamental right but also a critical responsibility in ensuring that leaders are elected through a fair and democratic process.",
+                        image: "./Oxstar_Project_Images/Group Discussions.png",
+                        year: "2023",
+                        location: "Somaliland"
                     }
                 ]
             },
@@ -555,6 +646,27 @@
                         image: "./Oxstar_Project_Images/agriculture3.png",
                         year: "2023",
                         location: "Somaliland"
+                    },
+                    { 
+                        title: "Tree Planting", 
+                        description: "The Oxstar program team actively participated in a collaborative tree-planting initiative held at Moi University in Eldoret City, Kenya. During the event, the team joined students and faculty members to plant native saplings across the campus as part of a broader environmental conservation effort.",
+                        image: "./Oxstar_Project_Images/12_Tree Planting.png",
+                        year: "2023",
+                        location: "Eldoret City, Kenya."
+                    },
+                    {
+                        title:"Nutrition Sensitive Sectors in Somaliland.",
+                        description: "The deliberations from the consultative meeting were consolidated in a common position paper, which included inputs from 38 international and local organizations, 6 academic entities, the media, and other stakeholders.",
+                        image: "",
+                        year: "2023",
+                        location:"Somaliland"
+                    },
+                    {
+                        title:"Somaliland Scaling Up Nutrition (SUN) Stakeholders Capacity Strengthening Workshop on Nutrition Sensitive Agriculture and Food Systems ",
+                        description: "The overall aim of the workshop was to create a synergy and platforms of addressing the acute malnutrition and micronutrients deficiency syndrome in women and children below five years of age. During the meeting, Oxstar Lead Consultant Mr. Samuel Otieno gave a detailed presentation on food fortification.",
+                        image: "./Oxstar_Project_Images/Nutrition2.jpg",
+                        year: "2023",
+                        location:"Puntland, Somalia"
                     }
                 ]
             },
@@ -593,6 +705,86 @@
                 ]
             }
         };
+
+        // ---------- SEO DYNAMIC META UPDATER ----------
+        function updateMetaForService(serviceKey) {
+            if (serviceKey && servicesData[serviceKey]) {
+                const service = servicesData[serviceKey];
+                // Update <title>
+                document.title = service.title + ' – Oxstar Consultancy';
+                // Update meta description
+                let metaDesc = document.querySelector('meta[name="description"]');
+                if (!metaDesc) {
+                    metaDesc = document.createElement('meta');
+                    metaDesc.name = 'description';
+                    document.head.appendChild(metaDesc);
+                }
+                metaDesc.setAttribute('content', service.description + ' View our complete project portfolio.');
+            }
+        }
+
+        // ---------- LOAD SERVICE DATA (modified to include meta update) ----------
+        function loadServiceData() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+            const projectsContainer = document.getElementById('projects-container');
+            const searchInput = document.getElementById('project-search');
+            
+            if (service && servicesData[service]) {
+                const serviceData = servicesData[service];
+                
+                // Update page content
+                document.getElementById('service-title').textContent = serviceData.title;
+                document.getElementById('service-subtitle').textContent = 'Our Projects and Achievements';
+                document.getElementById('service-description').textContent = serviceData.description;
+                
+                // 🆕 UPDATE SEO META TAGS
+                updateMetaForService(service);
+                
+                // Show search
+                searchInput.style.display = 'block';
+                
+                // Load projects (your existing function)
+                loadProjects(serviceData.projects);
+                
+                window.location.hash = service;
+            } else {
+                // Default view
+                document.getElementById('service-title').textContent = 'Our Services Portfolio';
+                document.getElementById('service-subtitle').textContent = 'Select a service to view detailed projects';
+                document.getElementById('service-description').textContent = 'Please select a specific service from our home page to view the related projects and achievements.';
+                searchInput.style.display = 'none';
+                projectsContainer.innerHTML = `...`; // your empty state
+                // Reset title to default
+                document.title = 'Our Projects – Oxstar Consultancy';
+            }
+        }
+
+        // ---------- LOAD PROJECTS (adds alt text + lazy loading) ----------
+        function createProjectCard(project) {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'project-card';
+            // 🆕 ADD ALT TEXT AND LAZY LOAD TO PROJECT IMAGES
+            projectCard.innerHTML = `
+                <div class="project-image">
+                    <img src="${project.image}" alt="${project.title} – ${project.description.substring(0, 60)}..." loading="lazy">
+                    <div class="project-overlay">
+                        <button class="view-details-btn" onclick="openProjectModal('${project.title.replace(/'/g, "\\'")}')">
+                            <i class="fas fa-expand"></i> Quick View
+                        </button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <div class="project-meta">
+                        ${project.location ? `<span><i class="fas fa-map-marker-alt"></i> ${project.location}</span>` : ''}
+                        ${project.partner ? `<span><i class="fas fa-handshake"></i> ${project.partner}</span>` : ''}
+                    </div>
+                </div>
+            `;
+            return projectCard;
+        }
 
         // Load service data if a valid service is specified
         function loadServiceData() {
